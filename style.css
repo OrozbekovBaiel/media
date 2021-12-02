@@ -5,11 +5,27 @@ body{
 *{
   box-sizing: border-box;
 }
-.grid-example{
-  flex: 0 0 25%;
+.grid-example2{
   display: flex;
   flex-wrap: wrap;
 }
-@media (max-width 900px) {
-  
+@media (max-width:900px) {
+  .grid-example2 div{
+    flex:  0 0 33.33333333%;
+
+  }
+}
+@media (max-width: 780px) {
+  .grid-example2 div{
+    flex:  0 0 25%;
+
+  }
+}
+
+
+@media (max-width:565px) {
+  .grid-example2 div{
+    flex: 0 0 50%;
+
+  }
 }
